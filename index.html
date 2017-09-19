@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>Globophone</title>
+      <meta charset="utf-8">
+      <meta name="author" content="Raymond Ferrell">
+      <meta name="keywords" content="phone, form, webpage"/>
+      <meta name="description" content="Take Home Test for Bright.md"/>
+      <meta name="viewport" content="width=device-width">
+      <link href="globophone.css" rel="stylesheet" type="text/css"/>
+      <script type="text/javascript" src="globophone.js" async></script>
+   </head>
+   <body>
+      <header>
+         <h1>Welcome to Globophone!</h1>
+      </header>
+      <main>
+         <form id="sign-up__form">
+            <h3>Save Your Number:</h3>
+            <div class="form-field">
+               <small class="error-message" id="name__error-message">Your input is invalid, your name must be present</small>
+               <label for="name">Name</label>
+               <input id="name__field" type="text" name="name">
+            </div>
+            <div class="form-field">
+               <small class="error-message" id="tel__error-message">Your input is invalid, your number must not be blank, 10 of 11 digits long, and can't begin with a 0</small>
+               <label for="phone-number">Phone Number</label>
+               <input id="tel__field" type="tel" name="phone-number">
+            </div>
+            <div class="form-buttons" id="sign-up__form__buttons">
+               <button id="clear-form">Del</button>
+               <input id="submit-form" type="submit" value="Save">
+            </div>
+         </form>
+         <div id="form-data">
+            <h3 id="form-data__name">Saved name of {NAME}</h3>
+            <button id="back-to-form">Go Back to Start</button>
+         </div>
+      </main>
+   </body>
+   <footer></footer>
+</html>

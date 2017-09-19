@@ -1,0 +1,25 @@
+#sign-up__form {
+   width: 280px;
+}
+
+.form-field {
+   padding: 10px 0;
+   text-align: right;
+}
+
+.form-buttons {
+   text-align: center;
+}
+
+#clear-form {
+   display: none;
+}
+
+#form-data {
+   display: none;
+}
+
+.error-message {
+   color: #FF0000;
+   display: none;
+}
